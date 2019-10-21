@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CAAC47A1CCFDF83005DA70C /* Debugging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8CAAC46B1CCFDF83005DA70C /* Debugging.cpp */; };
+		8CAAC47B1CCFDF83005DA70C /* PersistenceCubic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8CAAC4731CCFDF83005DA70C /* PersistenceCubic.cpp */; };
+		8CAAC47C1CCFDF83005DA70C /* PersistenceIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8CAAC4741CCFDF83005DA70C /* PersistenceIO.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CAAC45E1CCFDEF0005DA70C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8CAAC4601CCFDEF0005DA70C /* cPers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cPers; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CAAC46A1CCFDF83005DA70C /* DataReaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataReaders.h; sourceTree = "<group>"; };
+		8CAAC46B1CCFDF83005DA70C /* Debugging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Debugging.cpp; sourceTree = "<group>"; };
+		8CAAC46C1CCFDF83005DA70C /* Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debugging.h; sourceTree = "<group>"; };
+		8CAAC46D1CCFDF83005DA70C /* Filtration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filtration.h; sourceTree = "<group>"; };
+		8CAAC46E1CCFDF83005DA70C /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
+		8CAAC46F1CCFDF83005DA70C /* GeneralFiltration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralFiltration.h; sourceTree = "<group>"; };
+		8CAAC4701CCFDF83005DA70C /* InputRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputRunner.h; sourceTree = "<group>"; };
+		8CAAC4711CCFDF83005DA70C /* PersistenceCalcRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistenceCalcRunner.h; sourceTree = "<group>"; };
+		8CAAC4721CCFDF83005DA70C /* PersistenceCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistenceCalculator.h; sourceTree = "<group>"; };
+		8CAAC4731CCFDF83005DA70C /* PersistenceCubic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PersistenceCubic.cpp; sourceTree = "<group>"; };
+		8CAAC4741CCFDF83005DA70C /* PersistenceIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PersistenceIO.cpp; sourceTree = "<group>"; };
+		8CAAC4751CCFDF83005DA70C /* PersistenceIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistenceIO.h; sourceTree = "<group>"; };
+		8CAAC4761CCFDF83005DA70C /* PersistencyTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistencyTypes.h; sourceTree = "<group>"; };
+		8CAAC4771CCFDF83005DA70C /* PersistentPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentPair.h; sourceTree = "<group>"; };
+		8CAAC4781CCFDF83005DA70C /* Reduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reduction.h; sourceTree = "<group>"; };
+		8CAAC4791CCFDF83005DA70C /* STLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLUtils.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CAAC45D1CCFDEF0005DA70C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CAAC4571CCFDEF0005DA70C = {
+			isa = PBXGroup;
+			children = (
+				8CAAC4621CCFDEF0005DA70C /* cPers */,
+				8CAAC4611CCFDEF0005DA70C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CAAC4611CCFDEF0005DA70C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CAAC4601CCFDEF0005DA70C /* cPers */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CAAC4621CCFDEF0005DA70C /* cPers */ = {
+			isa = PBXGroup;
+			children = (
+				8CAAC46A1CCFDF83005DA70C /* DataReaders.h */,
+				8CAAC46B1CCFDF83005DA70C /* Debugging.cpp */,
+				8CAAC46C1CCFDF83005DA70C /* Debugging.h */,
+				8CAAC46D1CCFDF83005DA70C /* Filtration.h */,
+				8CAAC46E1CCFDF83005DA70C /* Functions.h */,
+				8CAAC46F1CCFDF83005DA70C /* GeneralFiltration.h */,
+				8CAAC4701CCFDF83005DA70C /* InputRunner.h */,
+				8CAAC4711CCFDF83005DA70C /* PersistenceCalcRunner.h */,
+				8CAAC4721CCFDF83005DA70C /* PersistenceCalculator.h */,
+				8CAAC4731CCFDF83005DA70C /* PersistenceCubic.cpp */,
+				8CAAC4741CCFDF83005DA70C /* PersistenceIO.cpp */,
+				8CAAC4751CCFDF83005DA70C /* PersistenceIO.h */,
+				8CAAC4761CCFDF83005DA70C /* PersistencyTypes.h */,
+				8CAAC4771CCFDF83005DA70C /* PersistentPair.h */,
+				8CAAC4781CCFDF83005DA70C /* Reduction.h */,
+				8CAAC4791CCFDF83005DA70C /* STLUtils.h */,
+			);
+			path = cPers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CAAC45F1CCFDEF0005DA70C /* cPers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CAAC4671CCFDEF0005DA70C /* Build configuration list for PBXNativeTarget "cPers" */;
+			buildPhases = (
+				8CAAC45C1CCFDEF0005DA70C /* Sources */,
+				8CAAC45D1CCFDEF0005DA70C /* Frameworks */,
+				8CAAC45E1CCFDEF0005DA70C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cPers;
+			productName = cPers;
+			productReference = 8CAAC4601CCFDEF0005DA70C /* cPers */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CAAC4581CCFDEF0005DA70C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "CHAO CHEN";
+				TargetAttributes = {
+					8CAAC45F1CCFDEF0005DA70C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 8CAAC45B1CCFDEF0005DA70C /* Build configuration list for PBXProject "cPers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8CAAC4571CCFDEF0005DA70C;
+			productRefGroup = 8CAAC4611CCFDEF0005DA70C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CAAC45F1CCFDEF0005DA70C /* cPers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CAAC45C1CCFDEF0005DA70C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAAC47C1CCFDF83005DA70C /* PersistenceIO.cpp in Sources */,
+				8CAAC47B1CCFDF83005DA70C /* PersistenceCubic.cpp in Sources */,
+				8CAAC47A1CCFDF83005DA70C /* Debugging.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8CAAC4651CCFDEF0005DA70C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8CAAC4661CCFDEF0005DA70C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8CAAC4681CCFDEF0005DA70C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "/Users/cchen/Projects/TopoDeepVisualization/LDPers/cPers/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8CAAC4691CCFDEF0005DA70C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "/Users/cchen/Projects/TopoDeepVisualization/LDPers/cPers/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CAAC45B1CCFDEF0005DA70C /* Build configuration list for PBXProject "cPers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CAAC4651CCFDEF0005DA70C /* Debug */,
+				8CAAC4661CCFDEF0005DA70C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CAAC4671CCFDEF0005DA70C /* Build configuration list for PBXNativeTarget "cPers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CAAC4681CCFDEF0005DA70C /* Debug */,
+				8CAAC4691CCFDEF0005DA70C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CAAC4581CCFDEF0005DA70C /* Project object */;
+}

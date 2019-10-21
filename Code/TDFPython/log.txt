@@ -1,0 +1,48 @@
+Debuging Persistence Computation -- Log File
+Tue Feb 12 11:38:41 2019
+-------start vList construction and sorting
+Tue Feb 12 11:38:41 2019
+-------start sorting vList by f. value
+Tue Feb 12 11:38:41 2019
+-------end sorting vList by f. value
+Tue Feb 12 11:38:41 2019
+-------end vList constructed and sorting
+Number of vertices = 1056784
+Tue Feb 12 11:38:41 2019
+-------start propagating maximum values from vertices
+Tue Feb 12 11:38:41 2019
+-------end propagating maximum values from vertices
+Tue Feb 12 11:38:41 2019
+-------start cell numbering 
+Tue Feb 12 11:38:41 2019
+-------end cell numbering 
+Tue Feb 12 11:38:41 2019
+-------start explicit cell generation
+Tue Feb 12 11:38:41 2019
+-------end explicit cell generation
+Tue Feb 12 11:38:41 2019
+-------start explicit cell generation
+Tue Feb 12 11:38:41 2019
+-------end explicit cell generation
+Tue Feb 12 11:38:41 2019
+-------start explicit cell generation
+Tue Feb 12 11:38:41 2019
+-------end explicit cell generation
+Tue Feb 12 11:38:41 2019
+-------start propagating maximum values from vertices
+Tue Feb 12 11:38:41 2019
+-------end propagating maximum values from vertices
+Tue Feb 12 11:38:41 2019
+-------start cell numbering 
+Tue Feb 12 11:38:41 2019
+-------end cell numbering 
+Tue Feb 12 11:38:41 2019
+-------start boundary list resizing
+Tue Feb 12 11:38:41 2019
+-------end boundary list resizing
+Tue Feb 12 11:38:41 2019
+-------start boundary calculation
+Tue Feb 12 11:38:42 2019
+----------filtration construction finished
+Tue Feb 12 11:38:42 2019
+-------Reducing cells, total number = 1054729
