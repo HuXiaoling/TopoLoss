@@ -6,6 +6,7 @@ Update the total gradient (e.g. cross entropy gradient + lambda * topo gradient)
 
 Our loss function is actually defined on critical pixels, and you can conduct your total loss (e.g. cross entropy loss + lambda * topo loss) based on the repository. And do the else as usual.
 
+## Content directory
 Data/:                                   data folder
 
 Results/:                                storing results
