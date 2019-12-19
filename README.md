@@ -1,9 +1,7 @@
-# Code for topological loss
+# Topological loss
 
 Theoretically speaking, the loss function can be incorporated into any suitable framework.
-
 The function is used in PyTorch. And there are two ways to incorporate this loss function into your framework:
-
 Update the total gradient (e.g. cross entropy gradient + lambda * topo gradient) when backpropagation;
 
 Our loss function is actually defined on critical pixels, and you can conduct your total loss (e.g. cross entropy loss + lambda * topo loss) based on the repository. And do the else as usual.
