@@ -1,4 +1,4 @@
-# C++ code for topological loss
+# Code for topological loss
 
 Data/:                                   data folder
 
