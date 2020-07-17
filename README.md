@@ -1,4 +1,4 @@
-# Topological loss
+# Topology-Preserving Deep Image Segmentation
 
 Theoretically speaking, the loss function can be incorporated into any suitable framework.
 The function is used in PyTorch. And there are two ways to incorporate this loss function into your framework:  
