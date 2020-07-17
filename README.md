@@ -21,3 +21,8 @@ Code/cPers/cPers/compile_pers_lib.sh:    script to compile the library
 Code/cPers/cPers/PersistencePython.cpp:  root file for the python library
 
 pybind11-stable.zip:                     tools used for compiling c++ code into library (python wrapper)
+
+## PyTorch example
+Here is an example: https://github.com/HuXiaoling/imageSeg-3D_topo. The original paper only deals with 2D images, while this repository contains both 2D and 2.5D implementations (backbone may be slightly different). And we also plan to release the code for true 3D implementations (the paper is in preparation).
+
+I apologize for the possible confusion. But stay tuned. All of the related repositories are under construction. You can definitely adopt existing repositories regarding your own data. If there are any questions, please feel easy to post them here.
