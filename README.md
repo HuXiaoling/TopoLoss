@@ -33,3 +33,5 @@ pybind11-stable.zip:                     tools used for compiling c++ code into 
 
 ## Update
 A more efficient version topoloss is uploaded!
+
+Now you could simply use topoloss.py to implement the topological loss function
