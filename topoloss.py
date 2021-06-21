@@ -16,7 +16,7 @@ import torch
 
 t0=time.time();
 
-def compute_dgm_force(lh_dgm, gt_dgm, pers_thresh=0, pers_thresh_perfect=0.99, do_return_perfect=False):
+def compute_dgm_force(lh_dgm, gt_dgm, pers_thresh=0.03, pers_thresh_perfect=0.99, do_return_perfect=False):
 
     lh_pers = abs(lh_dgm[:, 1] - lh_dgm[:, 0])
     if (gt_dgm.shape[0] == 0):
@@ -38,7 +38,7 @@ def compute_dgm_force(lh_dgm, gt_dgm, pers_thresh=0, pers_thresh_perfect=0.99, d
         # print(lh_pers.size)
         # print (gt_pers.shape)
         # assert lh_pers.size > gt_pers.size
-        assert lh_pers.size >= gt_n_holes
+        # assert lh_pers.size >= gt_n_holes
         if (lh_pers.size < gt_n_holes):
             gt_n_holes = lh_pers.size
 
