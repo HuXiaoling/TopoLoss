@@ -34,4 +34,4 @@ pybind11-stable.zip:                     tools used for compiling c++ code into 
 ## Update
 A more efficient version topoloss is uploaded!
 
-Now you could simply use topoloss.py to implement the topological loss function with PyTorch framework.
+Now you could simply use topoloss.py to incorporate the topological loss function into your own PyTorch framework.
