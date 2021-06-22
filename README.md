@@ -32,6 +32,10 @@ pybind11-stable.zip:                     tools used for compiling c++ code into 
 4. I apologize for the possible confusion. But stay tuned. All of the related repositories are under construction. You can definitely adopt existing repositories regarding your own data. If there are any questions, please feel easy to post them here.
 
 ## Update (06/2021)
-A more efficient version topoloss is uploaded!
+A more efficient version topoloss is uploaded!！
 
-Now you could simply use topoloss.py to incorporate the topological loss function into your own backbone (PyTorch).
+Now you could simply incorporate the topological loss function into your own backbone (PyTorch).
+
+topoloss.py: offline sample showing how to use topological loss.
+
+topoloss_pytorch.py: function used in pytorch framework (Will be included in pip later)
