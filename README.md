@@ -39,3 +39,7 @@ Now you could simply incorporate the topological loss function into your own bac
 topoloss.py: offline sample showing how to use topological loss.
 
 topoloss_pytorch.py: function used in pytorch framework (Will be included in pip later)
+
+## Post-processing
+
+Be sure to do post-processing (remove small connected components) as topoloss will possibly create a few isolated points.
