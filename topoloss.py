@@ -16,7 +16,7 @@ import torch
 
 t0=time.time();
 
-def compute_dgm_force(lh_dgm, gt_dgm, pers_thresh=0.03, pers_thresh_perfect=0.99, do_return_perfect=False):
+def compute_dgm_force(lh_dgm, gt_dgm, pers_thresh=0, pers_thresh_perfect=0.99, do_return_perfect=False):
 
     lh_pers = abs(lh_dgm[:, 1] - lh_dgm[:, 0])
     if (gt_dgm.shape[0] == 0):
@@ -38,7 +38,7 @@ def compute_dgm_force(lh_dgm, gt_dgm, pers_thresh=0.03, pers_thresh_perfect=0.99
         # print(lh_pers.size)
         # print (gt_pers.shape)
         # assert lh_pers.size > gt_pers.size
-        # assert lh_pers.size >= gt_n_holes
+        assert lh_pers.size >= gt_n_holes
         if (lh_pers.size < gt_n_holes):
             gt_n_holes = lh_pers.size
 
@@ -131,7 +131,7 @@ def getCriticalPoints(likelihood):
 
 def getTopoLoss(likelihood, gt):
     # topo_size = likelihood.shape[0]
-    topo_size = 200
+    topo_size = 100
     topo_cp_weight_map = np.zeros(likelihood.shape)
     topo_cp_ref_map = np.zeros(likelihood.shape)
 
@@ -198,16 +198,16 @@ def getTopoLoss(likelihood, gt):
                         else:
                             topo_cp_ref_map[y + int(dcp_lh[hole_indx][0]), x + int(dcp_lh[hole_indx][1])] = 0
 
-        # topo_cp_weight_map = torch.tensor(topo_cp_weight_map, dtype=torch.float).to(device)
-        # topo_cp_ref_map = torch.tensor(topo_cp_ref_map, dtype=torch.float).to(device)
-        loss_topo = (((likelihood * topo_cp_weight_map) - topo_cp_ref_map) ** 2).sum()
+    # topo_cp_weight_map = torch.tensor(topo_cp_weight_map, dtype=torch.float).to(device)
+    # topo_cp_ref_map = torch.tensor(topo_cp_ref_map, dtype=torch.float).to(device)
+    loss_topo = (((likelihood * topo_cp_weight_map) - topo_cp_ref_map) ** 2).sum()
 
-        return loss_topo
+    return loss_topo
 
 
 if __name__ == "__main__":
     gt = 1 - imread('gt.png')
-    lh = 1 - imread('out.png')
+    lh = 1 - imread('lh.png')
 
     loss_topo = getTopoLoss(lh, gt)
     print(loss_topo)
