@@ -217,9 +217,9 @@ def getTopoLoss(likelihood_tensor, gt_tensor, topo_size=100):
                         else:
                             topo_cp_ref_map[y + int(dcp_lh[hole_indx][0]), x + int(dcp_lh[hole_indx][1])] = 0
 
-        topo_cp_weight_map = torch.tensor(topo_cp_weight_map, dtype=torch.float).cuda()
-        topo_cp_ref_map = torch.tensor(topo_cp_ref_map, dtype=torch.float).cuda()
+    topo_cp_weight_map = torch.tensor(topo_cp_weight_map, dtype=torch.float).cuda()
+    topo_cp_ref_map = torch.tensor(topo_cp_ref_map, dtype=torch.float).cuda()
 
-        # Measuring the MSE loss between predicted critical points and reference critical points
-        loss_topo = (((likelihood_tensor * topo_cp_weight_map) - topo_cp_ref_map) ** 2).sum()
-        return loss_topo
+    # Measuring the MSE loss between predicted critical points and reference critical points
+    loss_topo = (((likelihood_tensor * topo_cp_weight_map) - topo_cp_ref_map) ** 2).sum()
+    return loss_topo
