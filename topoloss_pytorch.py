@@ -201,7 +201,7 @@ def getTopoLoss(likelihood_tensor, gt_tensor, topo_size=100):
                             0] and int(dcp_lh[hole_indx][1]) >= 0 and int(dcp_lh[hole_indx][1]) <
                                 likelihood.shape[1]):
                             topo_cp_ref_map[y + int(bcp_lh[hole_indx][0]), x + int(bcp_lh[hole_indx][1])] = \
-                                likelihood[int(dcp_lh[hole_indx][0]), int(dcp_lh[hole_indx][1])]
+                                lh_patch[int(dcp_lh[hole_indx][0]), int(dcp_lh[hole_indx][1])]
                         else:
                             topo_cp_ref_map[y + int(bcp_lh[hole_indx][0]), x + int(bcp_lh[hole_indx][1])] = 1
                     if (int(dcp_lh[hole_indx][0]) >= 0 and int(dcp_lh[hole_indx][0]) < likelihood.shape[
@@ -213,7 +213,7 @@ def getTopoLoss(likelihood_tensor, gt_tensor, topo_size=100):
                             0] and int(bcp_lh[hole_indx][1]) >= 0 and int(bcp_lh[hole_indx][1]) <
                                 likelihood.shape[1]):
                             topo_cp_ref_map[y + int(dcp_lh[hole_indx][0]), x + int(dcp_lh[hole_indx][1])] = \
-                                likelihood[int(bcp_lh[hole_indx][0]), int(bcp_lh[hole_indx][1])]
+                                lh_patch[int(bcp_lh[hole_indx][0]), int(bcp_lh[hole_indx][1])]
                         else:
                             topo_cp_ref_map[y + int(dcp_lh[hole_indx][0]), x + int(dcp_lh[hole_indx][1])] = 0
 
