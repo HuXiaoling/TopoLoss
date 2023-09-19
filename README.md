@@ -1,5 +1,5 @@
 # TopoLoss
-This repository contains the implementation of our work "[pology-Preserving Deep Image Segmentation](https://proceedings.neurips.cc/paper_files/paper/2019/file/2d95666e2649fcfc6e3af75e09f5adb9-Paper.pdf)", **accepted to NeurIPS 2019**. 
+This repository contains the implementation of our work "[Topology-Preserving Deep Image Segmentation](https://proceedings.neurips.cc/paper_files/paper/2019/file/2d95666e2649fcfc6e3af75e09f5adb9-Paper.pdf)", **accepted to NeurIPS 2019**. 
 
 Theoretically speaking, the loss function can be incorporated into any suitable framework.
 The function is used in PyTorch. And there are two ways to incorporate this loss function into your framework:  
