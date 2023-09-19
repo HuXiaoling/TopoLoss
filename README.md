@@ -42,4 +42,15 @@ topoloss_pytorch.py: function used in pytorch framework (Will be included in pip
 
 ## Post-processing
 
-Be sure to do post-processing (remove small connected components) as topoloss will possibly create a few isolated points.
+Be sure to post-process (remove small connected components) as topoloss may create a few isolated points.
+
+## Citation
+Please consider citing our paper if you find it useful.
+```
+@article{hu2019topology,
+  title={Topology-preserving deep image segmentation},
+  author={Hu, Xiaoling and Li, Fuxin and Samaras, Dimitris and Chen, Chao},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
